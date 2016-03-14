@@ -18,7 +18,7 @@ public class MiHashSet
         set= new ArrayListInt();
     }
     /**
-     * añade el elemento al conjunto si no estaba. 
+     * Añade el elemento al conjunto si no estaba. 
      * Devuelve verdadero en caso de que el elemento no estuviera presente en el conjunto y falso en caso contrario.
      */
     
@@ -35,8 +35,25 @@ public class MiHashSet
         }
         return estaba;
     }
+    /**
+     * Vacía el conjunto
+     */
     public void clear()
     {
         set.clear();
     }
+    /**
+     * Devuelve verdadero si el conjunto contiene el elemento, 
+     * falso en caso contrario.
+     */
+    public boolean contains(int elemento)
+    {
+        boolean contiene = false;
+        if (set.contains(elemento))
+        {
+            contiene = true;
+        }
+        return contiene;
+    }
+    
 }
