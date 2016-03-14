@@ -35,5 +35,8 @@ public class MiHashSet
         }
         return estaba;
     }
-    
+    public void clear()
+    {
+        set.clear();
+    }
 }
