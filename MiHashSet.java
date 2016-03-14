@@ -55,5 +55,13 @@ public class MiHashSet
         }
         return contiene;
     }
-    
+    public boolean isEmpty()
+    {
+        boolean vacio = false;
+        if (set.isEmpty())
+        {
+            vacio = true;
+        }
+        return vacio;
+    }
 }
