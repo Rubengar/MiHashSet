@@ -83,9 +83,41 @@ public class MiHashSet
         }
         return existe;
     }
+    /**
+     * Devuelve el número de elementos del conjunto.
+     */
     public int size()
     {
         return set.size();
+    }
+    /**
+     * Devuelve una cadena conteniendo todos los elementos del 
+     * conjunto separados por comas y entre corchetes.
+     */
+    public String toString()
+    {
+        String cadena = null;
+        for(int i = 0; i<size(); i++)
+        {
+            
+        }
+        return cadena;
+    }
+    /**
+     * Devuelve verdadero si el parámetro es igual al 
+     * conjunto sobre el que se invoca y falso en otro caso.
+     */
+    public boolean equals(MiHashSet otroConjunto)
+    {
+        boolean igual = false;
+        if (otroConjunto.size()== size())
+        {
+            for(int i = 0; i<size(); i++)
+            {
+                igual = otroConjunto.contains(set.get(set.indexOf(i)));
+            }
+        }
+        return igual;
     }
     
 }
