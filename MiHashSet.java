@@ -83,5 +83,9 @@ public class MiHashSet
         }
         return existe;
     }
+    public int size()
+    {
+        return set.size();
+    }
     
 }
